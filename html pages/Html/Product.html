@@ -2,36 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
-  </head>
-  <body>
+    <title>Products</title>
+
     <style>
       body {
-        font-family: Arial, sans-serif;
-        background-color: #ff0040;
+        text-align: right;
+        background-color: #e90909;
       }
 
-      footer {
-        background-color: rgb(233, 4, 4);
-        height: 20px;
+      .products {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        line-height: 26px;
+        color: #000000;
       }
 
-      header {
-        background-color: #d02751;
+      .links {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        color: #000;
       }
-
-      #flex-box {
-        background-color: #eb247a;
+      .header {
+        display:flex;
+        text-align: right;
       }
     </style>
-    <header>Products</header>
+  </head>
 
-    <div>
-      <a href="Product.html"></a>
-      <a href="index.html"></a>
-      <a href="Contact.html"></a>
-    </div>
-    <footer>Links</footer>
+  <body>
+    <div class="products">Products</div>
+
+  <div class="header"></div>
+    <a href="index.html">Homepage</a>
+    <a href="Contact.html">Contact</a>
+
+    <div class="links">Links</div>
   </body>
 </html>
