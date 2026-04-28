@@ -2,40 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-  </head>
-  <body>
+    <title>Contact Box</title>
+
     <style>
       body {
-        font-family: Arial, sans-serif;
         background-color: #ff0040;
       }
 
-      footer {
-        text-align: right;
-        background-color: rgb(233, 4, 4);
-        height: 20px;
+      .contact {
+        text-align: right; 
+        font-family: sans-serif;
+        font-size: 20px;
+        color: #000;
       }
-      header {
-        background-color: #d02751;
+
+      .info {
         text-align: right;
+        top: 80px;
+        left: 20px;
+        font-family: "Island Moments", cursive;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000;
       }
-      #flex-box {
-        background-color: #eb247a;
-      }
-      p {
-        text-align: right;
+
+      .links {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        color: #000;
       }
     </style>
-    <header>Contact page</header>
+  </head>
 
-    <p>This is a contact page</p>
+  <body>
+      
+    <div class="contact">Contact</div>
+      <div class="info">
+        <ol>
+          <li>Name:</li>
+          <li>Email:</li>
+          <li>Phone:</li>
+        </ol>
+      </div>
 
-    <a href="Product.html"></a>
-    <a href="index.html"></a>
-    <a href="Contact.html"></a>
-
-    <footer>Links</footer>
+      <div class="links">Links</div>
+    </div>
   </body>
 </html>
