@@ -2,47 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Homepage</title>
+    <title>Dishware</title>
 
     <style>
       body {
+        margin: 0;
+        font-family: Arial, sans-serif;
         background-color: #ee0842;
-        text-align: right;
-      }
-
-      .homepage{
-        text-align: right;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-        line-height: 26px;
-        color: #c31e78;
-        background-color: #b82988;
-      }
-
-      .links {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        font-family: "Inter", sans-serif;
-        font-size: 20px;
         color: #000;
+        text-align: center;
       }
 
-      .links:hover { 
-        color: rgb(12, 121, 229);
+      h1 {
+        margin: 30px 0 10px;
+        font-size: 32px;
+      }
+
+      .subtitle {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .item img {
+        width: 140px;
+        height: auto;
+      }
+
+      .item {
+        font-size: 14px;
+      }
+
+      .nav {
+        margin: 30px 0;
+      }
+
+      .nav a {
+        color: #000;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .nav a:hover {
+        color: #ffffff;
       }
     </style>
   </head>
 
   <body>
-      
-    <div class="Homepage">Homepage</div>
+    <h1>Dishware</h1>
+    <div class="subtitle">Silverware collection</div>
 
-    
-    <a href="Contact.html">Contact</a>
+    <div class="gallery">
+      <div class="item">
+        <img src="../CSS/dishware.png" alt="dishware" />
+        <div>Dishware Set</div>
+      </div>
 
-    <div class="links">Links</div>
+      <div class="item">
+        <img src="../CSS/utinsels.png" alt="Utensils" />
+        <div>Utensils Set</div>
+      </div>
+    </div>
 
+    <div class="nav">
+      <a href="Products.html">Products</a>
+      <a href="Contact.html">Contact</a>
     </div>
   </body>
 </html>

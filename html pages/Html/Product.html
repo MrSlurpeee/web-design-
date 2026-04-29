@@ -6,41 +6,103 @@
 
     <style>
       body {
-        text-align: right;
+        margin: 0;
+        font-family: Arial, sans-serif;
         background-color: #db0606;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        background-color: rgb(234, 78, 78);
+        width: 600px;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
       }
 
       .products {
         font-family: "Times New Roman", Times, serif;
-        font-size: 20px;
-        line-height: 26px;
-        color: #000000;
+        font-size: 28px;
+        margin-bottom: 10px;
       }
-      .products:hover {
-        color: #00ffff;
+
+      p {
+        font-size: 16px;
+        margin-bottom: 15px;
       }
-      .links {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        font-family: "Inter", sans-serif;
-        font-size: 20px;
+
+      .dishware {
+        list-style-type: square;
+        text-align: left;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .image-section {
+        margin-top: 10px;
+      }
+
+      .image-section img {
+        width: 250px;
+        border-radius: 8px;
+      }
+
+      .nav {
+        margin-top: 20px;
+      }
+
+      .nav a {
+        margin: 10px;
+        text-decoration: none;
         color: #000;
+        font-weight: bold;
       }
-      .header {
-        display: flex;
-        text-align: right;
+
+      .nav a:hover {
+        color: #00aaaa;
+      }
+
+      .links {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #d54646;
       }
     </style>
   </head>
 
   <body>
-    <div class="products">Products</div>
+    <div class="container">
+      <div class="products">Products</div>
 
-    <div class="header"></div>
-    <a href="index.html">Homepage</a>
-    <a href="Contact.html">Contact</a>
+      <p>These products are as listed:</p>
 
-    <div class="links">Links</div>
+      <ul class="dishware">
+        <li>Plates</li>
+        <li>Bowls</li>
+        <li>Mugs</li>
+        <li>Pots</li>
+        <li>Pans</li>
+      </ul>
+
+      <div class="image-section">
+        <p>cookware offered</p>
+        <img src="../CSS/cookware.png" alt="Cookware" />
+      </div>
+
+      <div class="image-section">
+        <p>More cookware</p>
+        <img src="../CSS/pans.png" alt="Cookware" />
+      </div>
+
+      <div class="nav">
+        <a href="index.html">Homepage</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+
+      <div class="links">Links</div>
+    </div>
   </body>
 </html>
