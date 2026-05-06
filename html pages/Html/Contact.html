@@ -2,52 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
 
     <style>
       body {
         margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #ff0040;
-        color: #000;
+        font-family: "Orbitron";
+        background-color: #b70f0f;
       }
 
       .navbar {
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 10px;
         background-color: rgba(0, 0, 0, 0.2);
         padding: 15px;
       }
 
       .navbar a {
         text-decoration: none;
-        color: #000;
+        color: black;
         font-weight: bold;
+        font-family: "Montserrat", inherit;
       }
 
       .navbar a:hover {
-        color: #ffffff;
+        color: white;
       }
 
       .contact {
         text-align: center;
-        font-size: 28px;
-        margin-top: 40px;
+        font-size: 23px;
+        margin-top: 30px;
+      }
+
+      .info-table th,
+      .info-table td {
+        border: 3px #00aaaa;
+        padding: 12px;
+        text-align: center;
+        border: 5px blue; 
       }
 
       .info {
         list-style: none;
-        padding: 0;
         text-align: center;
-        font-family: cursive;
-        font-size: 20px;
-        line-height: 30px;
-        margin-top: 20px;
+        font-size: 10px;
       }
 
-      .info li:hover {
-        color: blue;
+      .footer {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+      }
+
+      .footer a {
+        display: block;
+        text-decoration: none;
+        color: black;
+      }
+      .contact-form {
+        width: 50%;
+        margin: 40px auto;
+        background-color: #0effb3;
+        padding: 20px;
+        border: 2px solid black;
+      }
+
+      .contact-form h2 {
+        text-align: center;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #d54646;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      .contact-form button {
+        padding: 20px;
+        background-color: #0f3294;
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+      }
+
+      .contact-form button:hover {
+        background-color: #333;
       }
     </style>
   </head>
@@ -61,10 +106,42 @@
 
     <div class="contact">Contact</div>
 
-    <ul class="info">
-      <li>Name:</li>
-      <li>Email:</li>
-      <li>Phone:</li>
-    </ul>
+    <table class="info-table">
+      <tr>
+        <th>Type</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Arun's Supreme Cookware</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>SupremeCookware@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td>610-192-2341</td>
+      </tr>
+    </table>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+
+      <form>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea
+         ><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="footer">Links</div>
   </body>
 </html>
