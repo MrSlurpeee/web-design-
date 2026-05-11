@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dishware</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ee0842;
+        text-align: center;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        background-color: #0effb3;
+        padding: 15px;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        color: white;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .gallery img {
+        width: 100%;
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+      }
+
+      .footer a {
+        display: block;
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="Product.html">Products</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+
+    <h1>Dishware</h1>
+    <p>Arun's Supreme Cookware</p>
+
+    <div class="gallery">
+      <div>
+        <img src="../CSS/dishware.png" alt="dishware" />
+        <p>Dishware Set</p>
+      </div>
+
+      <div>
+        <img src="../CSS/utinsels.png" alt="utensils" />
+        <p>Utensils Set</p>
+      </div>
+    </div>
+
+    <div class="footer">Links</div>
+  </body>
+</html>
