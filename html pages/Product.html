@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+
+    <style>
+      body {
+        margin: 2px;
+        font-family: Arial, sans-serif;
+        background-color: #db0606;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        background-color: #0effb3;
+        padding: 15px;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        color: #fff;
+      }
+
+      .container {
+        background-color: rgb(234, 78, 78);
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .product-table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        background-color: rgb(255, 255, 255);
+      }
+
+      .product-table th,
+      .product-table td {
+        border: 2px solid rgb(218, 12, 12);
+        padding: 10px;
+        text-align: center;
+      }
+
+      .product-table th {
+        background-color: #0f3294;
+        color: white;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        font-size: 14px;
+      }
+
+      .footer a {
+        display: block;
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="Products.html">Products</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+      <p>These products are as listed:</p>
+
+      <table class="product-table">
+        <tr>
+          <th>Products</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Plates</td>
+          <td>Durable ceramic plates</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>Bowls</td>
+          <td>Deep serving bowls</td>
+          <td>$8</td>
+        </tr>
+        <tr>
+          <td>Mugs</td>
+          <td>Heat-resistant mugs</td>
+          <td>$6</td>
+        </tr>
+        <tr>
+          <td>Pots</td>
+          <td>Stainless steel cooking pots</td>
+          <td>$25</td>
+        </tr>
+        <tr>
+          <td>Pans</td>
+          <td>Non-stick frying pans</td>
+          <td>$20</td>
+        </tr>
+      </table>
+
+      <div class="grid">
+        <img src="../CSS/cookware.png" alt="Cookware" />
+        <img src="../CSS/pans.png" alt="Pans" />
+      </div>
+    </div>
+
+    <div class="footer">Links</div>
+  </body>
+</html>
